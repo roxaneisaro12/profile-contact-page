@@ -270,15 +270,23 @@
         <input type="email" id="email" name="email" required>
     </div>
 
-    <div>
-        <label for="category">Inquiry Category:</label>
-        <select id="category" name="category" required>
-            <option value="">-- Select a category --</option>
-            <option value="general">General Inquiry</option>
-            <option value="support">Technical Support</option>
-            <option value="feedback">Feedback</option>
-        </select>
-    </div>
+    
+<div>
+    <label for="category">Inquiry Category:</label>
+
+    <select id="category" name="category" required>
+        <option value="" disabled selected>
+            Choose an inquiry category
+        </option>
+        <option value="general">General Inquiry</option>
+        <option value="academic">Academic Questions</option>
+        <option value="web-development">Web Development</option>
+        <option value="collaboration">Project Collaboration</option>
+        <option value="feedback">Feedback or Suggestions</option>
+        <option value="other">Other</option>
+    </select>
+</div>
+
 
     <div>
         <label for="message">Message:</label>
